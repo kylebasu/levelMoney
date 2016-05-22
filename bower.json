@@ -1,0 +1,27 @@
+{
+  "name": "level-money",
+  "version": "1.0.0",
+  "authors": [
+    "Kyle <kylebasu@gmail.com>"
+  ],
+  "description": "levelMoney application",
+  "main": "index.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.5.5",
+    "angular": "~1.5.5",
+    "jquery": "~2.2.4"
+  }
+}
