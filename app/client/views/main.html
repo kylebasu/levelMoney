@@ -1,5 +1,11 @@
 <body>
 <div>
-    <div>{{ hello }}</div>
+    <div ng-repeat="transaction in transactions | orderBy: '-date'">
+        <div>
+            <p>{{transaction.date}}</p>
+            <p>{{transaction.spent}}</p>
+            <p>{{transaction.income}}</p>
+        </div>
+    </div>
 </div>
 </body>

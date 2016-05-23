@@ -13,6 +13,8 @@
   "author": "Kyle Basu",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "qs": "^6.2.0",
+    "request": "^2.72.0"
   }
 }
