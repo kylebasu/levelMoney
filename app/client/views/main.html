@@ -1,10 +1,14 @@
 <body>
 <div>
+    <button ng-click='donutHandler()'>{{ donuts }}</button>
+    <button ng-click='ccHandler()'> {{ cc }}</button>
     <div ng-repeat="transaction in transactions | orderBy: '-date'">
         <div>
             <p>{{transaction.date}}</p>
-            <p>{{transaction.spent}}</p>
-            <p>{{transaction.income}}</p>
+            <p>spent: {{transaction.spent}}</p>
+            <p>income: {{transaction.income}}</p>
+            <p ng-show='transaction.cc'>CC payments: {{transaction.cc }}</p>
+            <p ng-show='!transaction.cc && cc === "Include CC payments"'>No credit card payments made in this period</p>
         </div>
     </div>
 </div>
