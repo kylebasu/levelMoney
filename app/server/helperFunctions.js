@@ -1,15 +1,15 @@
-function aggregateData(transactions){    
+function aggregateData(transactions){
     var returnData = {};
-    var totalSpent = 0
-    var totalIncome = 0
+    var totalSpent = 0;
+    var totalIncome = 0;
     transactions.forEach(function(transaction){
         var date = transaction["transaction-time"].split("-").slice(0, 2).join("-");
         if(!returnData[date]){
             if(transaction.amount < 0){
-                returnData[date] = {"date": date, "spent": Math.abs(transaction.amount), "income": 0}
+                returnData[date] = {"date": date, "spent": Math.abs(transaction.amount), "income": 0};
                 totalSpent += Math.abs(transaction.amount);
             }else{
-                returnData[date] = {"date": date, "spent":0, "income": transaction.amount}
+                returnData[date] = {"date": date, "spent":0, "income": transaction.amount};
                 totalIncome += transaction.amount;
             }
         }else{

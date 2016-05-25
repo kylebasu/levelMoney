@@ -32,10 +32,6 @@ angular.module('mainControllers', []).controller('mainController', ['$scope', '$
                 $scope.getData('info');
             }
         };
-        // $http.get('http://localhost:1337/info').success(function(data){
-        //     for(var key in data){
-        //         $scope.transactions.push(data[key]);
-        //     }
-        // });
+        
         $scope.getData('info');
     }]);

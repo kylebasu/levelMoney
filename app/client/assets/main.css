@@ -1,0 +1,23 @@
+.container{
+    width:100%;
+    height: 50px;
+    border: 1px groove grey;
+    position: relative;
+}
+
+.date{
+    width: 50px;
+}
+
+.money{
+    height: 20%;
+    width: 20%;
+    float: right;
+    clear: right;
+    margin: 3px;
+}
+
+#date{
+    width: 50px;
+    margin: 0px;
+}
