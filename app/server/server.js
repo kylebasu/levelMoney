@@ -1,5 +1,4 @@
 var http = require('http');
-var qs = require('qs');
 var express = require('express');
 var request = require('request');
 var requestHandler = require('./helperFunctions.js');
